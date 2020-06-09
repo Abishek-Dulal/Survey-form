@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <h1 id="title"> Abishek Industry Survey form</h1>
+    <p id="description">Details about yourself</p>
+    <form>
+        <div class="form-group">
+            <label for="name" id="name-label"> Name </label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" class="text-label" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label"> email </label>
+            <input id="email" type="text" name="email" required placeholder="Enter your age" class="text-label" />
+        </div>
+
+        <div class="form-group">
+            <label for="number" id="number-label"> Age (Optional)</label>
+            <input id="number" type="number" name="age" min="18" max="60" class="text-label" placeholder="Age" />
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected>Select current role</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="learner">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Abishek Industry to a friend</p>
+            <label>
+                <input type="radio" name="recommend" value="Definitely" checked> Definitely
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="May be"> May be
+            </label>
+
+            <label>
+                <input type="radio" name="recommend" value="May be not"> May be not
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <p>
+                What would you like to see improved?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end
+                Projects
+            </label>
+
+            <label>
+                <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+                Projects
+            </label>
+
+            <label>
+                <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+                Visualization
+            </label>
+
+            <label>
+                <input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges
+            </label>
+
+            <label>
+                <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open
+                Source Community
+            </label>
+
+            <label>
+                <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help
+                rooms
+            </label>
+
+            <label>
+                <input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos
+            </label>
+
+
+
+        </div>
+
+
+        <div class="form-group">
+            <p>Any Comments or suggestion?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button id="submit" type="submit" name="submit">submit</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
